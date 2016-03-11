@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script> //sript suppose to create hr element... doesnt work
-        newItem = document.createElement("hr");
+    <script> //script suppose to create hr element... doesnt work
+// got it. its because we didn't set on click call on function! or make it a function
+        function insert_new_text() {
+            newItem = document.createElement("hr");
 
-        destParent = document
-                .getElementsByTagName("body")[0];
-        destParent.insertBefore(
-                newItem, destParent.firstChild);
+            destParent = document
+                    .getElementsByTagName("body")[0];
+            destParent.insertBefore(
+                    newItem, destParent.firstChild);
+        }
     </script>
 </head>
-<body>
-Click on Web Page
+<body onclick="insert_new_text()">
+<h1 id="my_text"> Click on Web Page </h1>
 </body>
 </html>
