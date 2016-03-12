@@ -2,17 +2,17 @@
 <html>
 <head>
 <script>
-    var timer, x_pos=0, pic;
-    function _timer() {
-        pic = document.getElementById("pic");
+    var timer, x_pos=0, txt;
+    function t_timer() {
+        txt = document.getElementById("txt");
         x_pos = x_pos+1;
-        pic.style.left = x;
-        timer = setTimeout(_timer, 50);
+        txt.style.left = x_pos+ 'px';
+        timer = setTimeout(t_timer, 50);
     }
 </script>
 </head>
-<body onload="_timer()">
-<img src="file:///C:/Users/Serge/Pictures/Laptop.JPG" id="pic"
-     style="position:absolute; left:0">
+<body onload="t_timer()">
+<h1 id="txt" style="position:absolute; left:0"> Yooo </h1>
+<button onclick="clearTimeout(timer)">Stop</button>
 </body>
 </html>
