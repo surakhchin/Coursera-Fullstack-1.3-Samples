@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<button id="0" onclick="alert('hello')">Click me!</button><br>
+<button id="1">Remover Listener</button>
+<script>
+    function do_something(){alert('Clicked');}
+
+    var b_zero = document.getElementById("0");
+    b_zero.addEventListener("click", do_something);
+
+    var b_one = document.getElementById("1");
+    b_one.addEventListener("click", function(){
+        b_zero.removeEventListener("click", do_something);
+    });
+</script>
+</body>
+</html>
