@@ -5,3 +5,4 @@ while (width > 50) {
     //all the following code goes here
 }
 
+var this_div = document.createElement("div"); // generates div element
