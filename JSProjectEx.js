@@ -1,6 +1,6 @@
 function show_pattern() {
     var top_position = 25, left_position = 25; // set up variables
-    var width = 400, height = 400;
+    var width = 600, height = 600;
     var color_list = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
     var the_body = document.getElementById("theBody");
 
